@@ -5,6 +5,10 @@
 <div class="contanier ms-4">
     <h1>{{$project->name}}</h1>
 
+    @if ($project->type)
+        <p>Tipo: {{$project->type->name}}</p>
+    @endif
+
     @if ($project->cover_image)
 
         <div class="cover_image">

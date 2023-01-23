@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Project;
+use App\Models\Type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,8 +19,8 @@ class ProjectTypeSeeder extends Seeder
         $projects = Project::all();
 
         foreach($projects as $project){
-            $project_id = Project::inRandomOrder()->first()->id;
-            $project->project_id = $project_id;
+            $type_id = Type::inRandomOrder()->first()->id;
+            $project->type_id = $type_id;
             $project->update();
         }
     }
