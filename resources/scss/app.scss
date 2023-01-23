@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/bootstrap';
+
+main{
+    height: calc(100vh - 57px);
+    overflow: auto;
+}
+
+.main-wrapper{
+    height: calc(100vh - 57px);
+}
+
+.sc-nav-link{
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.cover_image{
+    width: 400px;
+    margin: 30px 0;
+
+    img{
+        max-width: 100%;
+    }
+}
